@@ -1,4 +1,13 @@
-{
-	"MY_KEY": "Hallo",
-	"MY_BAD_KEY": "Bad Key"
+{	
+	"ENTRY_POINT": "This is the start of your journey",
+	"DECISION_POINT": "What will you choose: Cake or Death?",
+	"DECISION_POINT_CHOICE_1": "Cake",
+	"DECISION_POINT_CHOICE_2": "Death",
+	
+	"DECISION_POINT_CHOICE_1_RESPONSE": "Very well...bring him cake!",
+	"DECISION_POINT_CHOICE_2_RESPONSE": "Very well...death it is!",
+	
+	"DECISION_POINT_CHOICE_1_EXCEEDED_RESPONSE": "Well we haven't got any cake! We only had the one and weren't expecting a rush!",
+	
+	"END_POINT": "The End..."
 }

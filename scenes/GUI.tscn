@@ -1,0 +1,51 @@
+[gd_scene load_steps=3 format=3 uid="uid://bf6qtd4pdanng"]
+
+[ext_resource type="Script" path="res://scripts/dialog.gd" id="1_i1sg2"]
+[ext_resource type="Script" path="res://scripts/gui.gd" id="1_p6b73"]
+
+[node name="GUI" type="VBoxContainer"]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -417.5
+offset_top = -60.0
+offset_right = 417.5
+grow_horizontal = 2
+grow_vertical = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+script = ExtResource("1_p6b73")
+
+[node name="HBCDialogBox" type="HBoxContainer" parent="."]
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="ButtonChoice1" type="Button" parent="HBCDialogBox"]
+layout_mode = 2
+text = "Choice1"
+
+[node name="LabelTextWall" type="Label" parent="HBCDialogBox"]
+layout_mode = 2
+text = "Word Word Word Word Word Word Word Word Word Word Word Word Word "
+
+[node name="ButtonChoice2" type="Button" parent="HBCDialogBox"]
+layout_mode = 2
+text = "Choice2"
+
+[node name="ButtonNext" type="Button" parent="HBCDialogBox"]
+layout_mode = 2
+text = "Next"
+
+[node name="ButtonEnd" type="Button" parent="HBCDialogBox"]
+layout_mode = 2
+text = "End"
+
+[node name="LabelPlaceholder" type="Label" parent="."]
+layout_mode = 2
+text = "Word Word Word Word Word Word Word Word Word "
+horizontal_alignment = 1
+
+[node name="NodeDialogScript" type="Node" parent="."]
+script = ExtResource("1_i1sg2")
