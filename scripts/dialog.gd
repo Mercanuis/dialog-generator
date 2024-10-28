@@ -51,6 +51,8 @@ func _load_file() -> Variant:
 		print("[dialog:load_file]: unable to parse JSON")
 		return null
 
+
 ## Returns the [String] value in the dictionary for the given [key]
 func get_dialog(key: String) -> String:
 	return text_dictionary[key]
+
