@@ -14,13 +14,17 @@ func load_file() -> Variant:
 		if typeof(data) == TYPE_DICTIONARY:
 			return data
 		else:
-			print("[data] was of different type than [TYPE_DICTIONARY]")
+			print("[dialog:load_file]: data is not of type DICTIONARY")
 			return null
 	else:
+		print("[dialog:load_file]: unable to parse JSON")
 		return null
+
 
 func _ready():
 	var text_dictionary = load_file()
-	for key in text_dictionary:
-		print("Key {0}: {1}\n".format([key, text_dictionary[key]]))
-	
+	if text_dictionary != null:	
+		for key in text_dictionary:
+			print("Key {0}: {1}\n".format([key, text_dictionary[key]]))
+	else:
+		print("[dialog:_ready]: unable to load dictionary")
