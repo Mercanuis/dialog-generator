@@ -16,7 +16,7 @@ var text_dictionary
 
 func _ready():
 	# Call the file loader
-	var text_dictionary = _load_file()
+	text_dictionary = _load_file()
 	
 	# Check to make sure the result is okay (!= null)
 	if text_dictionary != null:	
